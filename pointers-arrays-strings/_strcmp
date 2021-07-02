@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    char str1[] = "Salapio";
+    char str2[] = "Salaoip";
+    
+    char *p1 = str1;
+    char *p2 = str2;
+    int i, res, j;
+    i = 0;
+    while (*p1 != '\0' || *p2 != '\0')
+    {
+        if (*p1 == *p2 )
+        {
+            res = 0;
+        }
+        else
+        {
+          res = *p1 - *p2;
+          break;
+        }
+        p1++;
+        p2++;
+    }
+    printf("%d", res);
+    
+
