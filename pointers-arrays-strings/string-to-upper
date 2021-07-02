@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    char str[] = "Salapio";
+    char *ptr = str;
+    printf("%p",ptr);
+    while (*ptr != '\0')
+    {
+        if (*ptr >= 'a' && *ptr <= 'z')
+        {
+            *ptr = *ptr - 32;
+        }
+        ptr++;
+    }
+    *ptr = '\0';
+    printf("\n%p",ptr);
+    
+    return 0;
