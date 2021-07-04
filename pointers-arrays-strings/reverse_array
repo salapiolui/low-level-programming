@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int arr[] ={1,2,3,4,5};
+    int  *ptr = arr;
+    int n = 5;
+    int i = 0;
+    int l = n -1;
+    int temp;
+     while (i < (n + 1)/2)
+     {
+        temp = *(ptr + l);
+        *(ptr + l) = *(ptr + i);
+        *(ptr + i) = temp;
+        i++;
+        l--;
+        
+     }
+    printf("%d", arr[0]);
+    
+    return 0;
+}
